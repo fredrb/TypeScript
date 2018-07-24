@@ -17,6 +17,7 @@ verify.completions(
             { name: "xyz", text: "(method) C.xyz(): any", kind: "method", insertText: "this.xyz" },
             { name: "foo bar", text: '(property) C["foo bar"]: number', kind: "property", insertText: 'this["foo bar"]' },
         ],
+        isNewIdentifierLocation: true,
         preferences,
     },
     {
