@@ -1,0 +1,13 @@
+tests/cases/compiler/1computedStringEnums.ts(3,9): error TS2322: Only numeric enums can have computed members, but this expression has type 'string'.
+tests/cases/compiler/1computedStringEnums.ts(3,14): error TS1005: ',' expected.
+
+
+==== tests/cases/compiler/1computedStringEnums.ts (2 errors) ====
+    declare function bar(): string
+    enum E {
+      foo = bar();
+            ~~~~~
+!!! error TS2322: Only numeric enums can have computed members, but this expression has type 'string'.
+                 ~
+!!! error TS1005: ',' expected.
+    }

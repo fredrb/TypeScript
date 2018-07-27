@@ -1,0 +1,12 @@
+=== tests/cases/compiler/1computedStringEnums.ts ===
+declare function bar(): string
+>bar : () => string
+
+enum E {
+>E : E
+
+  foo = bar();
+>foo : E
+>bar() : string
+>bar : () => string
+}

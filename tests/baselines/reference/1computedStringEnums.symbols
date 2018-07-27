@@ -1,0 +1,11 @@
+=== tests/cases/compiler/1computedStringEnums.ts ===
+declare function bar(): string
+>bar : Symbol(bar, Decl(1computedStringEnums.ts, 0, 0))
+
+enum E {
+>E : Symbol(E, Decl(1computedStringEnums.ts, 0, 30))
+
+  foo = bar();
+>foo : Symbol(E.foo, Decl(1computedStringEnums.ts, 1, 8))
+>bar : Symbol(bar, Decl(1computedStringEnums.ts, 0, 0))
+}
